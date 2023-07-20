@@ -1,0 +1,8 @@
+weekDays= {1: "Monday", 2: "Tuesday", 3: "Wednesday", 4: "Thursday", 5: "Friday", 6: "Saturday", 7: "Sunday"}
+
+dayNumber= int(input("Enter the day number: "))
+
+if dayNumber > 0 and dayNumber < 8:
+    print(weekDays.get(dayNumber))
+else:
+    print("There is no such day")
