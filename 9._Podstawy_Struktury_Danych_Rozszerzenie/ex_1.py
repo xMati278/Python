@@ -14,7 +14,7 @@ for i in range(len(aItems)):
         if aItems[i] == bItems[j]:
             commonItems.append(aItems[i])
 
-if len(commonItems) == 0:
+if len(commonItems) == 0: # if commonItems:
     print("There are no common elements")
 
 else:

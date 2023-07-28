@@ -2,7 +2,7 @@ print(" Shape 7x6 with filling")
 
 for i in range(6):
     for j in range(7):
-        print("*" ,end= " ")
+        print("*", end= " ")
     print()
 
 print(" Shape 5x5 without filling")

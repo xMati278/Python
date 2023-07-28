@@ -1,10 +1,10 @@
 import random
 
-min= int(input("Enter a min. value: "))
-max= int(input("Enter a max. value: "))
+min_no = int(input("Enter a min. value: "))
+max_no = int(input("Enter a max. value: "))
 
-points= max-min
-randValue= random.randint(min,max)
+points= max_no-min_no
+randValue= random.randint(min_no, max_no)
 
 while 1:
     attempt = int(input("Enter a number: "))

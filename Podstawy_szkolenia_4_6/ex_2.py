@@ -1,8 +1,8 @@
 n = int(input("Enter number: "))
 i = 1
-sum= 0
+total_sum = 0
 
-for i in range(1, n+ 1):
-    sum += i
+for i in range(1, n + 1):
+    total_sum += i
 
-print(sum)
+print(total_sum)

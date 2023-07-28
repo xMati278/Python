@@ -6,19 +6,24 @@ pesel = {'50030478561': {'kolor_oczu': 'niebieski','imie':'Jan','nazwisko':'Kowa
 '53081352991': {'kolor_oczu': 'szary','imie':'Kacper','nazwisko':'Szybki','wiek':'25'},
 '54081198637': {'kolor_oczu': 'zielony','imie':'Anna','nazwisko':'Luźny','wiek':'43'}
         }
-names= ["Ada", "Amelia", "Anna", "Balbina", "Dagmara", "Ilona", "Inga", "Krystyna"]
+names = ["Ada", "Amelia", "Anna", "Balbina", "Dagmara", "Ilona", "Inga", "Krystyna"]
 keys_to_remove = []
 
 
 
-for key, value in pesel.items():
-    value['imie_matki']= random.choice(names)
+for value in pesel.values():
+    value['imie_matki'] = random.choice(names)
 
 
 
-for peselKey, valueKey in pesel.items():
+for peselKey in pesel.keys():
     if peselKey[-1] == '1':
         keys_to_remove.append(peselKey)
+
+
+for peselKey in list(pesel.keys()):
+    if peselKey[-1] == '1':
+        pesel.pop(peselKey)
 
 for x in keys_to_remove:
     pesel.pop(x)

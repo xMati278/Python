@@ -4,7 +4,7 @@ numberSet = set()
 toRemove = set()
 
 for i in range(15):
-    numberSet.add(random.randint(5,120))
+    numberSet.add(random.randint(5, 120))
 
 print(f'Before: {numberSet}')
 

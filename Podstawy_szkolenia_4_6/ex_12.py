@@ -1,3 +1,5 @@
+import string
+
 print("Aplhabet: ", end="")
 for i in range(97, 123):
     if i < 122:

@@ -1,6 +1,7 @@
-dict = {'The Sensual World' : 'Kate Bush', 'Shaday' : 'Ofra Haza', 'Achtung Baby' : 'U2', 'Aion' : 'Dead Can Dance', 'Invisible Touch' : 'Genesis'}
+dict = {'The Sensual World': 'Kate Bush', 'Shaday': 'Ofra Haza',
+        'Achtung Baby': 'U2', 'Aion': 'Dead Can Dance', 'Invisible Touch': 'Genesis'}
 
-while 1:
+while True:
     print("1. Show albums.")
     print("2. Check album.")
     print("3. Add new album.")
@@ -28,7 +29,7 @@ while 1:
             newKeyDict = str(input("Enter a name for the new album: "))
             newValDict = str(input("Enter the artist of the given album: "))
             dict[newValDict] = newValDict
-            print (dict)
+            print(dict)
             print()
 
         case 4:

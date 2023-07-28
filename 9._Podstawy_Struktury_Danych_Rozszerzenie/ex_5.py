@@ -16,16 +16,32 @@ bill_items = [
 dishes = {}
 
 
-for i in range(len(bill_items)):
+# for i in range(len(bill_items)):
+#
+#     if bill_items[i][0] not in dishes:
+#
+#         dishes[bill_items[i][0]] = {'dishes': [bill_items[i][1]], 'price': bill_items[i][2]}
+#
+#     else:
+#
+#         dishes[bill_items[i][0]]['dishes'].append(bill_items[i][1])
+#         dishes[bill_items[i][0]]['price'] = dishes.get(bill_items[i][0]).get('price') + bill_items[i][2]
 
-    if bill_items[i][0] not in dishes:
+# for item in bill_items:
+for name, dish, price in bill_items:
+    # name = item[0]
+    # dish = item[1]
 
-        dishes[bill_items[i][0]] = {'dishes': [bill_items[i][1]], 'price': bill_items[i][2]}
+    # name, dish, price = item
+
+    if name not in dishes:
+        dishes[name] = {'dishes': [name], 'price': price}
 
     else:
 
-        dishes[bill_items[i][0]]['dishes'].append(bill_items[i][1])
-        dishes[bill_items[i][0]]['price'] = dishes.get(bill_items[i][0]).get('price') + bill_items[i][2]
+        dishes[name]['dishes'].append(dish)
+        dishes[name]['price'] += price
+
 
 for key, value in dishes.items():
     
