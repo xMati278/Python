@@ -34,9 +34,10 @@ def orbit_check(distance: int):
     if distance > 2000:
         print("The spaceship has reached orbit.")
     else:
-        print("The spaceship failed to reach orbit")
+        print("The spaceship failed to reach orbit.")
 
 
 fuel_in_tank, astronauts_on_board = rocket_setup()
 distance_traveled = (rocket_flight(fuel_in_tank, astronauts_on_board))
+print(f'The spaceship has reached an altitude of: {distance_traveled}')
 orbit_check(distance_traveled)
