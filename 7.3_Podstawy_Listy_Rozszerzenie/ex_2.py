@@ -7,7 +7,7 @@ allowedCharList = [' ', '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 for char in numbers:
     if char not in allowedCharList:
         print("You have not entered the correct values.")
-        sys.exit(1)
+        sys.exit(0)
 
 correctNumbers = numbers.split(" ")
 
