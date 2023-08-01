@@ -1,0 +1,2 @@
+Jeśli plik jest zapisany w ASCII, to polskie litery i inne znaki spoza zakresu ASCII
+zostaną niepoprawnie odczytane lub spowodują błąd, ponieważ ASCII nie obsługuje tych znaków.

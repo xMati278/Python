@@ -1,0 +1,4 @@
+C:\przyklad.txt                         ścieżka bezwzględna
+\katalog\przyklad.txt                   ścieżka względna
+C:\outer_dir\inner_dir\przyklad.txt     ścieżka bezwzględna
+\outer_dir\innedr_dir\przyklad.txt      ścieżka względna

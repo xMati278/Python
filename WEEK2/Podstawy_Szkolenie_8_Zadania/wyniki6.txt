@@ -1,0 +1,12 @@
+zad. 10.1
+najmniejsza wartość: 0
+największa wartość: 221
+
+zad. 10.2
+albo 0 albo nie działa
+
+Zad 10.3
+753 pixele kontrastujące
+
+Zad 10.4
+długość najdłuższej linnii pionowej: 5
