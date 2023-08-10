@@ -2,11 +2,11 @@ def rocket_setup():
     fuel = 0
     astronauts = 0
 
-    while True:
-        if fuel <= 5000 or fuel >= 30000:
-            fuel = int(input("Enter an initial amount of fuel between 5000 and 30000: "))
-        else:
-            break
+    while not fuel <= 5000 or fuel >= 30000:
+        # if fuel <= 5000 or fuel >= 30000:
+        fuel = int(input("Enter an initial amount of fuel between 5000 and 30000: "))
+        # else:
+        #     break
 
     while True:
         if astronauts <= 0 or astronauts >= 7:
@@ -32,9 +32,8 @@ def rocket_flight(fuel_amount: int, astronauts_amount: int):
 
 def orbit_check(distance: int):
     if distance > 2000:
-        print("The spaceship has reached orbit.")
-    else:
-        print("The spaceship failed to reach orbit.")
+        return "The spaceship has reached orbit."
+    return "The spaceship failed to reach orbit."
 
 
 fuel_in_tank, astronauts_on_board = rocket_setup()

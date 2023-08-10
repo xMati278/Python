@@ -5,4 +5,4 @@ def product_of_numbers(*args: int):
     return result
 
 
-print(product_of_numbers(15,12,2))
+print(product_of_numbers(15, 12 ,2))

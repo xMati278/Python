@@ -1,0 +1,3 @@
+bubble_sort, elements: 1000, time: 0:00:00.047000
+bubble_sort, elements: 10000, time: 0:00:05.080154
+bubble_sort, elements: 100000, time: 0:09:01.625379

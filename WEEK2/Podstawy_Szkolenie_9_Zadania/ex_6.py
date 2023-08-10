@@ -1,3 +1,12 @@
+
+# TODO zrobic tak, żeby w self.orders był trzymanu Order jako klucz a ilosc jako wartosc.
+class Order:
+    def __init__(self, order_id, name, price):
+        self.id = order_id
+        self.name = name
+        self.price = price
+
+
 class Manager:
     def __init__(self):
         self.orders = {"karty": 15}
@@ -12,13 +21,6 @@ class Manager:
     def sell(self, id_to_sell):
         self.orders[id_to_sell] -= 1
         print(self.orders)
-
-
-class Order:
-    def __init__(self, order_id, name, price):
-        self.id = order_id
-        self.name = name
-        self.price = price
 
 
 def main():
