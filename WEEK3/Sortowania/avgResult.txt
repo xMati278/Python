@@ -1,0 +1,12 @@
+quick_sort, elements: 1000, time: 0:00:00.000999
+quick_sort, elements: 10000, time: 0:00:00.025998
+quick_sort, elements: 100000, time: 0:00:00.251005
+quick_sort, elements: 1000000, time: 0:00:03.920799
+insertion_sort, elements: 1000, time: 0:00:00.033986
+insertion_sort, elements: 10000, time: 0:00:02.488559
+insertion_sort, elements: 100000, time: 0:04:47.850982
+insertion_sort, elements: 1000000, time: ~8h
+bubble_sort, elements: 1000, time: 0:00:00.047000
+bubble_sort, elements: 10000, time: 0:00:05.080154
+bubble_sort, elements: 100000, time: 0:09:01.625379
+bubble_sort, elements: 1000000, time: ~15h
